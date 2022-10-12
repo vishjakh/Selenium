@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="English">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="language" value="en"></parameter>
+		<classes>
+			<class name="base.Base" />
+			<class name="tests.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="French">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="language" value="fr"></parameter>
+		<classes>
+			<class name="base.Base" />
+			<class name="tests.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
